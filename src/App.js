@@ -1,11 +1,12 @@
 import './App.css'
+import Banner from './components/Banner'
 import Row from './components/Row'
 import requests from './requests'
 
 function App() {
   return (
-    <div style={{ backgroundColor: '#0f0f0f' }}>
-      Hello there!
+    <div style={{ backgroundColor: '#111' }}>
+      <Banner />
       <Row
         title={'Netflix Orignals'}
         large={true}
