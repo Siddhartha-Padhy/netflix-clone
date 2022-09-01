@@ -53,14 +53,10 @@ function Row({ title, large, fetchUrl }) {
               onClick={() => playTrailer(movie)}
               src={`${base_url}${
                 large
-                  ? movie.poster_path
-                  : movie.backdrop_path || movie.poster_path
+                  ? movie.backdrop_path || movie.poster_path
+                  : movie.poster_path || movie.backdrop_path
               }`}
-              className={
-                large
-                  ? 'object-contain w-full mr-2.5 hover:scale-110 duration-300 max-h-32'
-                  : 'object-contain w-full mr-2.5 hover:scale-110 duration-300 max-h-24'
-              }
+              className="object-contain w-full mr-2.5 hover:scale-110 duration-300 max-h-32"
               alt={movie.name}
             />
           )
