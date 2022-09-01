@@ -5,7 +5,7 @@ import requests from './requests'
 
 function App() {
   return (
-    <div style={{ backgroundColor: '#111' }}>
+    <div style={{ backgroundColor: '#111' }} className="pb-2">
       <Banner />
       <Row
         title={'Netflix Orignals'}
