@@ -10,7 +10,6 @@ function Row({ title, large, fetchUrl }) {
     async function fetchMovies() {
       const request = await axios.get(fetchUrl)
       setMovies(request.data.results)
-      console.log(request.data)
     }
     fetchMovies()
   }, [fetchUrl])
@@ -23,7 +22,7 @@ function Row({ title, large, fetchUrl }) {
       >
         {title}
       </h2>
-      <div className="flex flex-row my-2 p-2 overflow-x-scroll overflow-y-hidden posters">
+      <div className="flex flex-row my-2 p-1.5 overflow-x-scroll overflow-y-hidden posters">
         {movies?.map((movie, index) => {
           return (
             <img

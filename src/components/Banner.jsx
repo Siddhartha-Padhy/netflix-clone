@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import requests from '../requests'
 import axios from '../axios'
+import Navbar from './Navbar'
 
 function Banner() {
   const [movie, setMovie] = useState({})
@@ -32,31 +33,29 @@ function Banner() {
         height: '400px',
       }}
     >
+      <Navbar />
       <div className="ml-8 pt-36 h-48 text-white">
         <h1 className="pb-1.5 font-extrabold">
           {movie?.title || movie?.name || movie?.original_name}
         </h1>
         <div className="banner_buttons">
-          <button
-            className="cursor:pointer outline-none text-white px-2 mr-4 py-2 border-none rounded-md hover:text-black hover:bg-white transition-all duration-200"
-            style={{ backgroundColor: 'rgba(51,51,51,0.5)' }}
-          >
+          <button className="cursor:pointer outline-none text-white px-2 mr-4 py-2 border-none rounded-md hover:text-black hover:bg-white transition-all duration-200 banner-btn">
             Play
           </button>
-          <button
-            className="cursor:pointer outline-none text-white px-2 mr-4 py-2 border-none rounded-md hover:text-black hover:bg-white transition-all duration-200"
-            style={{ backgroundColor: 'rgba(51,51,51,0.5)' }}
-          >
+          <button className="cursor:pointer outline-none text-white px-2 mr-4 py-2 border-none rounded-md hover:text-black hover:bg-white transition-all duration-200 banner-btn">
             My List
           </button>
         </div>
-        <h3 className="pt-4 max-w-96 text-sm" style={{ width: '45rem' }}>
+        <h3
+          className="pt-4 max-w-xs text-sm leading-5"
+          style={{ width: '45rem' }}
+        >
           {truncate(movie?.overview, 180)}
         </h3>
       </div>
       <div
         style={{
-          height: '7.4rem',
+          height: '8rem',
           backgroundImage:
             'linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111)',
         }}

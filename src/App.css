@@ -5,3 +5,11 @@
 .posters::-webkit-scrollbar {
   display: none;
 }
+
+.banner-btn {
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+.banner-btn:hover {
+  background-color: #fff;
+}
