@@ -1,3 +1,14 @@
+# Netflix Clone
+A cloned website of the original Netflix Website built with react and tailwind css fetured with showing the trailer from youtube. Visit this website at:
+[Netflix-clone](https://netflix-clone-18.netlify.app/)<br><br>
+<img src="https://github.com/Siddhartha-Padhy/netflix-clone/blob/master/public/netflix-logo.png" style="width:13%" >&nbsp;&nbsp;
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Tailwind_CSS_logo.svg/1920px-Tailwind_CSS_logo.svg.png" style="width:25%" >
+
+## Packages Used
+- [react-youtube](https://www.npmjs.com/package/react-youtube)
+- [movie-trailer](https://www.npmjs.com/package/movie-trailer)
+- [tailwind css](https://www.npmjs.com/package/tailwindcss)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
